@@ -8,16 +8,47 @@
 
 /* Begin PBXBuildFile section */
 		626956251C14077D00AB8DAD /* PlumKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 626956241C14077D00AB8DAD /* PlumKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		626956341C1409B800AB8DAD /* String+PlumKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626956331C1409B800AB8DAD /* String+PlumKit.swift */; };
+		626956361C140AE300AB8DAD /* NSData+PlumKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626956351C140AE300AB8DAD /* NSData+PlumKit.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6269569D1C14293D00AB8DAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 626956181C14077D00AB8DAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6269568B1C14278900AB8DAD;
+			remoteInfo = CommonCrypto;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		626956211C14077D00AB8DAD /* PlumKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlumKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		626956241C14077D00AB8DAD /* PlumKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlumKit.h; sourceTree = "<group>"; };
 		626956261C14077D00AB8DAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		626956331C1409B800AB8DAD /* String+PlumKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+PlumKit.swift"; sourceTree = "<group>"; };
+		626956351C140AE300AB8DAD /* NSData+PlumKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+PlumKit.swift"; sourceTree = "<group>"; };
+		6269568C1C14278900AB8DAD /* CommonCrypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonCrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		626956901C14278900AB8DAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		626956941C1427A600AB8DAD /* CommonCrypto.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CommonCrypto.xcconfig; sourceTree = "<group>"; };
+		626956951C1427E000AB8DAD /* appletvos.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = appletvos.modulemap; sourceTree = "<group>"; };
+		626956961C1427E000AB8DAD /* appletvsimulator.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = appletvsimulator.modulemap; sourceTree = "<group>"; };
+		626956971C1427E000AB8DAD /* iphoneos.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = iphoneos.modulemap; sourceTree = "<group>"; };
+		626956981C1427E000AB8DAD /* iphonesimulator.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = iphonesimulator.modulemap; sourceTree = "<group>"; };
+		626956991C1427E000AB8DAD /* macosx.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = macosx.modulemap; sourceTree = "<group>"; };
+		6269569A1C1427E000AB8DAD /* watchos.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = watchos.modulemap; sourceTree = "<group>"; };
+		6269569B1C1427E000AB8DAD /* watchsimulator.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = watchsimulator.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6269561D1C14077D00AB8DAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		626956881C14278900AB8DAD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -30,7 +61,9 @@
 		626956171C14077D00AB8DAD = {
 			isa = PBXGroup;
 			children = (
+				6269569C1C1428DC00AB8DAD /* Frameworks */,
 				626956231C14077D00AB8DAD /* PlumKit */,
+				6269568D1C14278900AB8DAD /* CommonCrypto */,
 				626956221C14077D00AB8DAD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				626956211C14077D00AB8DAD /* PlumKit.framework */,
+				6269568C1C14278900AB8DAD /* CommonCrypto.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -46,10 +80,43 @@
 		626956231C14077D00AB8DAD /* PlumKit */ = {
 			isa = PBXGroup;
 			children = (
+				6269562C1C14085900AB8DAD /* Foundation */,
 				626956241C14077D00AB8DAD /* PlumKit.h */,
 				626956261C14077D00AB8DAD /* Info.plist */,
 			);
 			path = PlumKit;
+			sourceTree = "<group>";
+		};
+		6269562C1C14085900AB8DAD /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				626956331C1409B800AB8DAD /* String+PlumKit.swift */,
+				626956351C140AE300AB8DAD /* NSData+PlumKit.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		6269568D1C14278900AB8DAD /* CommonCrypto */ = {
+			isa = PBXGroup;
+			children = (
+				626956951C1427E000AB8DAD /* appletvos.modulemap */,
+				626956961C1427E000AB8DAD /* appletvsimulator.modulemap */,
+				626956971C1427E000AB8DAD /* iphoneos.modulemap */,
+				626956981C1427E000AB8DAD /* iphonesimulator.modulemap */,
+				626956991C1427E000AB8DAD /* macosx.modulemap */,
+				6269569A1C1427E000AB8DAD /* watchos.modulemap */,
+				6269569B1C1427E000AB8DAD /* watchsimulator.modulemap */,
+				626956901C14278900AB8DAD /* Info.plist */,
+				626956941C1427A600AB8DAD /* CommonCrypto.xcconfig */,
+			);
+			path = CommonCrypto;
+			sourceTree = "<group>";
+		};
+		6269569C1C1428DC00AB8DAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,6 +127,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				626956251C14077D00AB8DAD /* PlumKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		626956891C14278900AB8DAD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,10 +152,29 @@
 			buildRules = (
 			);
 			dependencies = (
+				6269569E1C14293D00AB8DAD /* PBXTargetDependency */,
 			);
 			name = PlumKit;
 			productName = PlumKit;
 			productReference = 626956211C14077D00AB8DAD /* PlumKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6269568B1C14278900AB8DAD /* CommonCrypto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 626956911C14278900AB8DAD /* Build configuration list for PBXNativeTarget "CommonCrypto" */;
+			buildPhases = (
+				626956871C14278900AB8DAD /* Sources */,
+				626956881C14278900AB8DAD /* Frameworks */,
+				626956891C14278900AB8DAD /* Headers */,
+				6269568A1C14278900AB8DAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CommonCrypto;
+			productName = CommonCrypto;
+			productReference = 6269568C1C14278900AB8DAD /* CommonCrypto.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -94,6 +187,9 @@
 				ORGANIZATIONNAME = Kingiol;
 				TargetAttributes = {
 					626956201C14077D00AB8DAD = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					6269568B1C14278900AB8DAD = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
 				};
@@ -111,12 +207,20 @@
 			projectRoot = "";
 			targets = (
 				626956201C14077D00AB8DAD /* PlumKit */,
+				6269568B1C14278900AB8DAD /* CommonCrypto */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6269561F1C14077D00AB8DAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6269568A1C14278900AB8DAD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -130,10 +234,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				626956341C1409B800AB8DAD /* String+PlumKit.swift in Sources */,
+				626956361C140AE300AB8DAD /* NSData+PlumKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		626956871C14278900AB8DAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6269569E1C14293D00AB8DAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6269568B1C14278900AB8DAD /* CommonCrypto */;
+			targetProxy = 6269569D1C14293D00AB8DAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		626956271C14077D00AB8DAD /* Debug */ = {
@@ -173,7 +294,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -215,7 +337,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -228,6 +351,7 @@
 		6269562A1C14077D00AB8DAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -235,15 +359,22 @@
 				INFOPLIST_FILE = PlumKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kingiol.PlumKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		6269562B1C14077D00AB8DAD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -251,7 +382,46 @@
 				INFOPLIST_FILE = PlumKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kingiol.PlumKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "";
+			};
+			name = Release;
+		};
+		626956921C14278900AB8DAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 626956941C1427A600AB8DAD /* CommonCrypto.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CommonCrypto/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingiol.CommonCrypto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		626956931C14278900AB8DAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 626956941C1427A600AB8DAD /* CommonCrypto.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CommonCrypto/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingiol.CommonCrypto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -274,6 +444,14 @@
 			buildConfigurations = (
 				6269562A1C14077D00AB8DAD /* Debug */,
 				6269562B1C14077D00AB8DAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		626956911C14278900AB8DAD /* Build configuration list for PBXNativeTarget "CommonCrypto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				626956921C14278900AB8DAD /* Debug */,
+				626956931C14278900AB8DAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
