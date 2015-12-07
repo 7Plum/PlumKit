@@ -12,6 +12,7 @@
 		626956361C140AE300AB8DAD /* NSData+PlumKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626956351C140AE300AB8DAD /* NSData+PlumKit.swift */; };
 		626956CC1C14744600AB8DAD /* PlumKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 626956CB1C14744600AB8DAD /* PlumKit.podspec */; };
 		62B9DE5D1C152E58000E85EB /* CALayer+PlumKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B9DE5C1C152E58000E85EB /* CALayer+PlumKit.swift */; };
+		62B9DE601C153449000E85EB /* NSObject+PlumKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B9DE5F1C153449000E85EB /* NSObject+PlumKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		626956CA1C146B9A00AB8DAD /* PlumKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PlumKit.playground; sourceTree = "<group>"; };
 		626956CB1C14744600AB8DAD /* PlumKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PlumKit.podspec; sourceTree = "<group>"; };
 		62B9DE5C1C152E58000E85EB /* CALayer+PlumKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+PlumKit.swift"; sourceTree = "<group>"; };
+		62B9DE5F1C153449000E85EB /* NSObject+PlumKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+PlumKit.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		626956231C14077D00AB8DAD /* PlumKit */ = {
 			isa = PBXGroup;
 			children = (
+				62B9DE5E1C15341E000E85EB /* Runtime */,
 				62B9DE5B1C152E27000E85EB /* UIKit */,
 				62B9DE5A1C152DF3000E85EB /* QuartzCore */,
 				6269562C1C14085900AB8DAD /* Foundation */,
@@ -141,6 +144,14 @@
 			children = (
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		62B9DE5E1C15341E000E85EB /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				62B9DE5F1C153449000E85EB /* NSObject+PlumKit.swift */,
+			);
+			path = Runtime;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +272,7 @@
 			files = (
 				62B9DE5D1C152E58000E85EB /* CALayer+PlumKit.swift in Sources */,
 				626956341C1409B800AB8DAD /* String+PlumKit.swift in Sources */,
+				62B9DE601C153449000E85EB /* NSObject+PlumKit.swift in Sources */,
 				626956361C140AE300AB8DAD /* NSData+PlumKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

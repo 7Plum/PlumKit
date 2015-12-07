@@ -22,7 +22,6 @@ public extension CALayer {
         set {
             borderColor = borderUIColor?.CGColor
         }
-        
         get {
             guard let unWrapBorderColor = borderColor else { return nil }
             return UIColor(CGColor: unWrapBorderColor)
