@@ -11,6 +11,7 @@
 		626956341C1409B800AB8DAD /* String+PlumKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626956331C1409B800AB8DAD /* String+PlumKit.swift */; };
 		626956361C140AE300AB8DAD /* NSData+PlumKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626956351C140AE300AB8DAD /* NSData+PlumKit.swift */; };
 		626956CC1C14744600AB8DAD /* PlumKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 626956CB1C14744600AB8DAD /* PlumKit.podspec */; };
+		62B9DE5D1C152E58000E85EB /* CALayer+PlumKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B9DE5C1C152E58000E85EB /* CALayer+PlumKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		6269569B1C1427E000AB8DAD /* watchsimulator.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = watchsimulator.modulemap; sourceTree = "<group>"; };
 		626956CA1C146B9A00AB8DAD /* PlumKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PlumKit.playground; sourceTree = "<group>"; };
 		626956CB1C14744600AB8DAD /* PlumKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PlumKit.podspec; sourceTree = "<group>"; };
+		62B9DE5C1C152E58000E85EB /* CALayer+PlumKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+PlumKit.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,8 @@
 		626956231C14077D00AB8DAD /* PlumKit */ = {
 			isa = PBXGroup;
 			children = (
+				62B9DE5B1C152E27000E85EB /* UIKit */,
+				62B9DE5A1C152DF3000E85EB /* QuartzCore */,
 				6269562C1C14085900AB8DAD /* Foundation */,
 				626956241C14077D00AB8DAD /* PlumKit.h */,
 				626956261C14077D00AB8DAD /* Info.plist */,
@@ -122,6 +126,21 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62B9DE5A1C152DF3000E85EB /* QuartzCore */ = {
+			isa = PBXGroup;
+			children = (
+				62B9DE5C1C152E58000E85EB /* CALayer+PlumKit.swift */,
+			);
+			path = QuartzCore;
+			sourceTree = "<group>";
+		};
+		62B9DE5B1C152E27000E85EB /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62B9DE5D1C152E58000E85EB /* CALayer+PlumKit.swift in Sources */,
 				626956341C1409B800AB8DAD /* String+PlumKit.swift in Sources */,
 				626956361C140AE300AB8DAD /* NSData+PlumKit.swift in Sources */,
 			);
@@ -452,6 +472,7 @@
 				6269562B1C14077D00AB8DAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		626956911C14278900AB8DAD /* Build configuration list for PBXNativeTarget "CommonCrypto" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +481,7 @@
 				626956931C14278900AB8DAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
