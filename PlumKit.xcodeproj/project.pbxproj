@@ -14,6 +14,7 @@
 		62B6E21B1C15E7C300CFB032 /* DateFormatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B6E21A1C15E7C300CFB032 /* DateFormatHelper.swift */; };
 		62B9DE5D1C152E58000E85EB /* CALayer+PlumKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B9DE5C1C152E58000E85EB /* CALayer+PlumKit.swift */; };
 		62B9DE601C153449000E85EB /* NSObject+PlumKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B9DE5F1C153449000E85EB /* NSObject+PlumKit.swift */; };
+		62F7BD3D1C16B2BF001BA9AA /* UIView+PlumKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F7BD3C1C16B2BF001BA9AA /* UIView+PlumKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		62B6E21A1C15E7C300CFB032 /* DateFormatHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatHelper.swift; sourceTree = "<group>"; };
 		62B9DE5C1C152E58000E85EB /* CALayer+PlumKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+PlumKit.swift"; sourceTree = "<group>"; };
 		62B9DE5F1C153449000E85EB /* NSObject+PlumKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+PlumKit.swift"; sourceTree = "<group>"; };
+		62F7BD3C1C16B2BF001BA9AA /* UIView+PlumKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+PlumKit.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 		62B9DE5B1C152E27000E85EB /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				62F7BD3C1C16B2BF001BA9AA /* UIView+PlumKit.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62B9DE5D1C152E58000E85EB /* CALayer+PlumKit.swift in Sources */,
+				62F7BD3D1C16B2BF001BA9AA /* UIView+PlumKit.swift in Sources */,
 				626956341C1409B800AB8DAD /* String+PlumKit.swift in Sources */,
 				62B9DE601C153449000E85EB /* NSObject+PlumKit.swift in Sources */,
 				62B6E21B1C15E7C300CFB032 /* DateFormatHelper.swift in Sources */,
