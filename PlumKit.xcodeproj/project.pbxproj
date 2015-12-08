@@ -11,6 +11,7 @@
 		626956341C1409B800AB8DAD /* String+PlumKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626956331C1409B800AB8DAD /* String+PlumKit.swift */; };
 		626956361C140AE300AB8DAD /* NSData+PlumKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626956351C140AE300AB8DAD /* NSData+PlumKit.swift */; };
 		626956CC1C14744600AB8DAD /* PlumKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 626956CB1C14744600AB8DAD /* PlumKit.podspec */; };
+		62B6E21B1C15E7C300CFB032 /* DateFormatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B6E21A1C15E7C300CFB032 /* DateFormatHelper.swift */; };
 		62B9DE5D1C152E58000E85EB /* CALayer+PlumKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B9DE5C1C152E58000E85EB /* CALayer+PlumKit.swift */; };
 		62B9DE601C153449000E85EB /* NSObject+PlumKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B9DE5F1C153449000E85EB /* NSObject+PlumKit.swift */; };
 /* End PBXBuildFile section */
@@ -43,6 +44,7 @@
 		6269569B1C1427E000AB8DAD /* watchsimulator.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = watchsimulator.modulemap; sourceTree = "<group>"; };
 		626956CA1C146B9A00AB8DAD /* PlumKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PlumKit.playground; sourceTree = "<group>"; };
 		626956CB1C14744600AB8DAD /* PlumKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PlumKit.podspec; sourceTree = "<group>"; };
+		62B6E21A1C15E7C300CFB032 /* DateFormatHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatHelper.swift; sourceTree = "<group>"; };
 		62B9DE5C1C152E58000E85EB /* CALayer+PlumKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+PlumKit.swift"; sourceTree = "<group>"; };
 		62B9DE5F1C153449000E85EB /* NSObject+PlumKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+PlumKit.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +106,7 @@
 			children = (
 				626956331C1409B800AB8DAD /* String+PlumKit.swift */,
 				626956351C140AE300AB8DAD /* NSData+PlumKit.swift */,
+				62B6E21A1C15E7C300CFB032 /* DateFormatHelper.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				62B9DE5D1C152E58000E85EB /* CALayer+PlumKit.swift in Sources */,
 				626956341C1409B800AB8DAD /* String+PlumKit.swift in Sources */,
 				62B9DE601C153449000E85EB /* NSObject+PlumKit.swift in Sources */,
+				62B6E21B1C15E7C300CFB032 /* DateFormatHelper.swift in Sources */,
 				626956361C140AE300AB8DAD /* NSData+PlumKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
