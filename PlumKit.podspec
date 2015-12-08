@@ -41,9 +41,9 @@ Pod::Spec.new do |s|
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.source_files = "PlumKit/Foundation/*.{swift}"
+  s.source_files = "PlumKit/**/*.{swift}"
 #s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.exclude_files = "PlumKit/PlumKit.playground"
 
   # s.public_header_files = "Classes/**/*.h"
 
