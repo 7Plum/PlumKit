@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62179C0C1C1EF19000541245 /* UITextField+PlumKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62179C0B1C1EF19000541245 /* UITextField+PlumKit.swift */; };
 		626956251C14077D00AB8DAD /* PlumKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 626956241C14077D00AB8DAD /* PlumKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		626956341C1409B800AB8DAD /* String+PlumKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626956331C1409B800AB8DAD /* String+PlumKit.swift */; };
 		626956361C140AE300AB8DAD /* NSData+PlumKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626956351C140AE300AB8DAD /* NSData+PlumKit.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		62179C0B1C1EF19000541245 /* UITextField+PlumKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+PlumKit.swift"; sourceTree = "<group>"; };
 		626956211C14077D00AB8DAD /* PlumKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlumKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		626956241C14077D00AB8DAD /* PlumKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlumKit.h; sourceTree = "<group>"; };
 		626956261C14077D00AB8DAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				62F7BD3C1C16B2BF001BA9AA /* UIView+PlumKit.swift */,
+				62179C0B1C1EF19000541245 /* UITextField+PlumKit.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				626956341C1409B800AB8DAD /* String+PlumKit.swift in Sources */,
 				62B9DE601C153449000E85EB /* NSObject+PlumKit.swift in Sources */,
 				62B6E21B1C15E7C300CFB032 /* DateFormatHelper.swift in Sources */,
+				62179C0C1C1EF19000541245 /* UITextField+PlumKit.swift in Sources */,
 				626956361C140AE300AB8DAD /* NSData+PlumKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

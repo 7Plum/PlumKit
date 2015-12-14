@@ -43,10 +43,6 @@ public extension UIView {
         }
     }
     
-    public func mm() {
-        roundingCorners([UIRectCorner.BottomLeft, .BottomRight], cornerRai: 10)
-    }
-    
 //    public override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
 //        
 //        if context == viewLayerBoundsContext && keyPath == "bounds" {
